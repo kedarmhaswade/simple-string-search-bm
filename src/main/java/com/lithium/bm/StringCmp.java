@@ -40,7 +40,7 @@ public class StringCmp {
 		Random r = new Random(System.currentTimeMillis());
 		for (int i = 0; i < length; i++)
 			chars[i] = (char)('a' + r.nextInt(25));
-		for (int i = 0; i < 10; i++)
+		for (int i = 0; i < 0.5*length; i++)
 			chars[r.nextInt(chars.length)] = OBSCURE_SPECIAL_CHARS[r.nextInt(OBSCURE_SPECIAL_CHARS.length)];
 
 		return new String(chars);
