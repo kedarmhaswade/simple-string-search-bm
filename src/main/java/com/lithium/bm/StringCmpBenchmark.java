@@ -8,7 +8,7 @@ import com.google.caliper.Param;
  */
 public final class StringCmpBenchmark {
 
-	@Param ({"100000"}) int length;
+	@Param ({"200000"}) int length;
 
 	@Benchmark public  int measureQuad(int reps) {
 		int ll = this.length;
