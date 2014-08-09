@@ -19,7 +19,7 @@ public class StringCmp {
 	}
 	public static String replaceUsingQuadraticAlgoritm(String s) {
 		char[] chars = s.toCharArray();
-		for (char c : chars) {
+		for (char c : OBSCURE_SPECIAL_CHARS) {
 			for (int i = 0; i < chars.length; i++) {
 				if (c == chars[i])
 					chars[i] = ' ';  //replaced
